@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <py-script src="/spam.py"></py-script> -->
+  </head>
+  <style>
+    body {
+      background-color: black;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      overflow: hidden;
+      background-color: #41449F;
+    }
+    .containor {
+      width: 60%;
+      height: 60%;
+    }
+    .inpText {
+      width: 100%;
+      height: 50px;
+      background-color: rgb(37, 37, 37);
+      border: none;
+      outline: none;
+      font-size: 22px;
+      color: white;
+      border-radius: 10px;
+      margin-top: 5px;
+      padding: 0px 10px;
+    }
+    .chkBtn {
+      margin-top: 20px;
+      /* width: 120px;
+        height: 40px; */
+      padding: 10px 40px;
+      border-radius: 10px;
+      background-color:#1F2295;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+    }
+    .chkBtn:hover {
+        color: black;
+      background-color: white;
+    }
+  </style>
+
+  <body>
+    <form class="containor" action="/check" method="post">
+      <h1>Email/SMS Spam Classifier</h1>
+      <div class="text">Enter the message</div>
+      <input class="inpText" type="text" name="inpText" />
+      <input class="chkBtn" type="submit" value="Check" />
+      <h2 id="out">{{isSpam}}</h2>
+    </form>
+  </body>
+</html>
